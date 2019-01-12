@@ -6,11 +6,20 @@
     <title>Title</title>
     <link rel="stylesheet" href="../pr22_ekz/style/style.css">
     <link rel="stylesheet" href="../pr22_ekz/style/normalize.css">
-    <link rel="shortcut icon" href="../pr11_ekz/img/tag.ico">
+    <link rel="shortcut icon" href="../pr22_ekz/img/tag.ico">
     <link rel="stylesheet" href="../pr22_ekz/style/slick.css">
     <link rel="stylesheet" href="../pr22_ekz/style/slick-theme.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type='text/javascript'>
+
+        window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+            }
+        }
+    </script>
 </head>
 <body>
 <div class="header container-fluid" id="header">
@@ -250,6 +259,7 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../pr22_ekz/js/main.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-</body>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+</script></body>
 </html>
